@@ -1,0 +1,6 @@
+@Ecolume_HostAddress = http://localhost:5048
+
+GET {{Ecolume_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

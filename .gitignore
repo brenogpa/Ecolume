@@ -1,0 +1,120 @@
+# Ignore files for .NET projects
+**/bin/
+**/obj/
+**/*.log
+**/*.user
+**/*.rsuser
+**/*.suo
+**/*.pdb
+**/*.exe
+**/*.dll
+**/*.cache/
+**/*.dbmdl
+**/*.dbproj.schemaview
+
+# Rider specific folders
+.idea/
+.idea_modules/
+.idea/
+.idea/*.iml
+.idea/.idea_modules.xml
+.idea/workspace.xml
+.idea/gradle.xml
+.idea/libraries/
+.idea/tasks.xml
+.idea/dictionaries
+.idea/vcs.xml
+.idea/jsLibraryMappings.xml
+
+# Rider - files for project-specific settings
+.idea/.ideaSettings.xml
+.idea/.ideaSettings.properties
+
+# VS Code specific folders and files
+.vscode/
+.vscode/settings.json
+.vscode/tasks.json
+.vscode/launch.json
+.vscode/extensions.json
+.vscode/*.code-workspace
+
+# Visual Studio specific folders and files
+.vs/
+.vscode/
+.vscode/settings.json
+.vscode/tasks.json
+.vscode/launch.json
+.vscode/extensions.json
+
+# Visual Studio Code specific settings
+.vscode/
+.vscode/cspell.json
+.vscode/extensions.json
+.vscode/tasks.json
+.vscode/*.code-workspace
+
+# Resharper folders
+_ReSharper*/
+*.[dD]esignTime*.*
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# dotnet-specific
+*.swp
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Ignore NuGet packages
+*.nupkg
+*.snupkg
+.nuget/
+# Uncomment if using NuGet prior to VS2015
+# packages/
+# Uncomment if using VS2017
+!/.nuget/NuGet.Config
+!/.nuget/NuGet.exe
+!/.nuget/NuGet.targets
+
+# Ignore build output directories
+**/[Dd]ebug/
+**/[Rr]elease/
+**/[Pp]ublish/
+**/x64/
+**/x86/
+
+# Ignore npm packages
+node_modules/
+
+# Ignore local database files
+*.mdf
+*.ldf
+
+# Ignore Rider and Visual Studio Code workspace files
+.vscode/
+.idea/
+
+# Ignore SQL generated files
+sql/
+
+# Ignore JetBrains files
+.idea/
+.idea_modules/
+
+# Docker files
+docker-compose.override.yml
+docker-compose.*.yml
+docker-compose.yml
+
+# Ignore coverage tool output
+coverage/
+
+# Ignore test result files
+TestResults/
+*.trx
+.trx
