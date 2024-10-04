@@ -17,6 +17,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\Ecolume.Application\Ecolume.Application.csproj" />
       <ProjectReference Include="..\Ecolume.Infrastructure\Ecolume.Infrastructure.csproj" />
     </ItemGroup>
 
