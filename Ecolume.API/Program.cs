@@ -16,6 +16,7 @@ builder.Services.AddDbContext<EcolumeDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 builder.Services.AddScoped(typeof(IProductService), typeof(ProductService));
+builder.Services.AddScoped(typeof(ICategoryService), typeof(CategoryService));
 
 builder.Services.AddAuthorization();
 builder.Services.AddControllers();
