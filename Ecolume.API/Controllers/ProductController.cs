@@ -8,24 +8,24 @@ namespace Ecolume.Controllers;
 [Route("product")]
 public class ProductController : ControllerBase
 {
-    private readonly IProductService _productService;
+    private readonly IProductService _service;
 
-    public ProductController(IProductService productService)
+    public ProductController(IProductService service)
     {
-        _productService = productService;
+        _service = service;
     }
     
     [HttpGet]
     public async Task<ActionResult<IEnumerable<Product>>> GetProducts()
     {
-        var products = await _productService.GetAllAsync();
+        var products = await _service.GetAllAsync();
         return Ok(products);
     }
 
     [HttpGet("{id}")]
     public async Task<ActionResult<Product>> GetProduct(int id)
     {
-        var product = await _productService.GetByIdAsync(id);
+        var product = await _service.GetByIdAsync(id);
         return product == null ? NotFound() : Ok(product);
     }
 
@@ -34,14 +34,14 @@ public class ProductController : ControllerBase
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public async Task<ActionResult<Product>> PostProduct(Product product)
     {
-        var newProduct = await _productService.AddAsync(product);
-        return CreatedAtAction(nameof(GetProduct), new { id = newProduct.Id }, newProduct);
+        await _service.AddAsync(product);
+        return CreatedAtAction(nameof(GetProduct), new { id = product.Id }, product);
     }
 
     [HttpPut("{id}")]
     public async Task<IActionResult> UpdateProduct(int id, Product updatedProduct)
     {
-        var updated = await _productService.UpdateAsync(id, updatedProduct);
+        var updated = await _service.UpdateAsync(id, updatedProduct);
 
         if (updated == null)
             return NotFound($"Product {id} not found.");
@@ -52,7 +52,7 @@ public class ProductController : ControllerBase
     [HttpDelete("{id}")]
     public async Task<IActionResult> DeleteProduct(int id)
     {
-        var deleted = await _productService.DeleteAsync(id);
+        var deleted = await _service.DeleteAsync(id);
         return deleted ? NoContent() : NotFound();
     }
 }

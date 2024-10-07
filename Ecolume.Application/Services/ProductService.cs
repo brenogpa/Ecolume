@@ -22,10 +22,9 @@ public class ProductService : IProductService
         return await _repository.GetByIdAsync(id);
     }
 
-    public async Task<Product> AddAsync(Product product)
+    public async Task AddAsync(Product product)
     {
         await _repository.AddAsync(product);
-        return product;
     }
 
     public async Task<Product?> UpdateAsync(int id, Product updatedProduct)

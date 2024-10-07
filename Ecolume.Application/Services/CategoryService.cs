@@ -22,10 +22,9 @@ public class CategoryService : ICategoryService
         return await _repository.GetByIdAsync(id);
     }
 
-    public async Task<Category> AddAsync(Category category)
+    public async Task AddAsync(Category category)
     {
         await _repository.AddAsync(category);
-        return category;
     }
 
     public async Task<Category?> UpdateAsync(int id, Category updatedCategory)

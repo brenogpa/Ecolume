@@ -17,6 +17,7 @@ builder.Services.AddDbContext<EcolumeDbContext>(options =>
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 builder.Services.AddScoped(typeof(IProductService), typeof(ProductService));
 builder.Services.AddScoped(typeof(ICategoryService), typeof(CategoryService));
+builder.Services.AddScoped(typeof(IBrandService), typeof(BrandService));
 
 builder.Services.AddAuthorization();
 builder.Services.AddControllers();
