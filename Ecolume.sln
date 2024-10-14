@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ecolume.Application", "Ecol
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ecolume.Domain", "Ecolume.Domain\Ecolume.Domain.csproj", "{8508BEFB-6C67-46E2-9D15-76852679FCD8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ecolume.Tests", "Ecolume.Tests\Ecolume.Tests.csproj", "{952A4E02-E41C-4206-AD51-9BAA7AB726B2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{8508BEFB-6C67-46E2-9D15-76852679FCD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8508BEFB-6C67-46E2-9D15-76852679FCD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8508BEFB-6C67-46E2-9D15-76852679FCD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{952A4E02-E41C-4206-AD51-9BAA7AB726B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{952A4E02-E41C-4206-AD51-9BAA7AB726B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{952A4E02-E41C-4206-AD51-9BAA7AB726B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{952A4E02-E41C-4206-AD51-9BAA7AB726B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
