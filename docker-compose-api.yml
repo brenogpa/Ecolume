@@ -1,0 +1,11 @@
+﻿version: '3.8'
+
+services:
+  ecolume-api:
+    build:
+      context: .
+      dockerfile: Ecolume.Application/Dockerfile
+    ports:
+      - "5000:8080"
+    environment:
+      - ConnectionStrings__DefaultConnection=Server=sqlserver,1433;Database=Ecolume;User Id=sa;Password=StrongPassword123!;TrustServerCertificate=True;
